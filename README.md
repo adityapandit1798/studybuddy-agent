@@ -5,7 +5,7 @@
 > **Track**: 🌍 **Agents for Good**  
 > Built with **Google ADK (Agent Development Kit)** and **Gemini 2.5 Flash Lite**
 
-![StudyBuddy Demo](demo-screenshot.png)  
+![StudyBuddy Demo](ss3.png)  
 *StudyBuddy generates custom study plans and quizzes—then checks in on your progress.*
 
 ---
@@ -100,13 +100,13 @@ adk deploy agent_engine --project=your-project --region=us-east4 .
 ---
 
 ## 📸 Demo Screenshots
-![Quiz Generation](screenshot1.png)  
+![Quiz Generation](ss1.png)  
 *StudyBuddy generates a quiz on integrals.*
 
-![Study Plan](screenshot2.png)  
+![Study Plan](ss2.png)  
 *Custom 5-day plan for Calculus.*
 
-![Logging](screenshot3.png)  
+![Logging](ss3.png)  
 *Observability via `LoggingPlugin`.*
 
 ---
