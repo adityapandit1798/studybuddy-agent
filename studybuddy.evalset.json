@@ -1,0 +1,54 @@
+{
+  "eval_set_id": "studybuddy_integration_suite",
+  "eval_cases": [
+    {
+      "eval_id": "calculus_study_plan",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [{"text": "I have a Calculus final in 5 days. I know derivatives but need help with integrals."}]
+          },
+          "final_response": {
+            "parts": [{"text": "📅 **5-Day Study Plan for Calculus**\n**Focus Areas**: integrals\n**Day 1**: Review basics + 10 practice problems\n**Day 2**: Deep dive into integrals + video tutorial\n**Day 3**: Practice quiz + mistake review\n**Day 4**: Full mock test\n**Day 5**: Final review + key concepts recap"}]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "generate_study_plan",
+                "args": {
+                  "subject": "Calculus",
+                  "days_left": 5,
+                  "weak_topics": "integrals"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "integrals_quiz",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [{"text": "Test me on integrals."}]
+          },
+          "final_response": {
+            "parts": [{"text": "1. Evaluate ∫₀¹ x² dx\n2. Area under y=x from 0 to 2"}]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "create_quiz",
+                "args": {
+                  "topic": "integrals",
+                  "difficulty": "medium"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
